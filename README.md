@@ -1,1 +1,0 @@
-# bestcapper-ai-bot
