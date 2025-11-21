@@ -2,7 +2,7 @@ import logging
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from telegram import Update
 
-TOKEN = "TOKEN = "8336864920:AAGfdyNt-ZovdJ5viVRtAlfCgp46R7WMoAY"   # вставь сюда свой токен
+TOKEN = "8336864920:AAGfdyNt-ZovdJ5viVRtAlfCgp46R7WMoAY"
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -14,9 +14,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def main():
     app = ApplicationBuilder().token(TOKEN).build()
-
     app.add_handler(CommandHandler("start", start))
-
     app.run_polling()
 
 if __name__ == "__main__":
